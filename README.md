@@ -14,7 +14,7 @@ The aim of this hackathon is to parallelize Monte Carlo simulation of financial 
 5. Validating the results of the Monte Carlo simulation against analytical solutions and real-world data to ensure accuracy and reliability.
 
 ## Our solution
-A Monte Carlo simulation applies a selected model (that specifies the behavior of an instrument) to a large set of random trials in an attempt to produce a plausible set of possible future outcomes. In regard to simulating stock prices, the most common model is geometric Brownian motion (GBM).
+A Monte Carlo simulation applies a selected model (that specifies the  behaviour of an instrument) to a large set of random trials in an attempt to produce a plausible set of possible future outcomes. In regard to simulating stock prices, the most common model is geometric Brownian motion (GBM).
 This project is a simple implementation of a stock prediction algorithm using Moving Average strategy. The moving average strategy is something closely related with the Geometric Brownian movement. The process of using this algorithm is as follows:
 
 -> First, we take the close price of any one particular stock or currency pair from day 1 to day 22, then plot one point in the graph. This point is the average of stock      price from day 1 to day 22.
