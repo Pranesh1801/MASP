@@ -31,7 +31,7 @@ The program takes in a CSV file containing historical stock price data, and then
 
 ## Reference Trade Chart
 
-![Stock_Diagram](https://user-images.githubusercontent.com/111297454/236674642-80906c55-21f1-4e48-98f9-841c466e2e04.png)
+![Stock_Diagram_!](https://user-images.githubusercontent.com/111297454/236981710-a6526a27-b160-4958-b474-7aa7eda4e26e.png)
 
 ## Implementation of Intel Libraries
 
