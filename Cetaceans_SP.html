@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href = "/static/Cetaceans.css" type="text/css">
+
+    </head>
+    <body>
+      <form name="passdata" action="." method="post">
+        <div class="slider--container">
+
+            <img class="slider--image" src="health1.jpg" alt="winter-01"  />
+            <img class="slider--image" src="health2.jpg" alt="winter-02"  />
+        </div>
+
+
+        
+        <div id="msform">
+            <div class="text">
+                <h2>Note this point very carefully...</h2>
+                <h3>Upload any dataset in CSV format with 5 columns mainly, Volume, Open, Close, High, and Low.</h3>
+                <h3>The dataset must contain these data for one company only and must have minimum of 63 rows.</h3>
+            </div>
+            <!-- <input type="file" name="" id="csv-file" accept=".csv"> -->
+            <label for="file-upload" class="custom-file-upload">
+                <i class="fas fa-cloud-upload-alt"></i> Choose CSV File
+            </label>
+              <div class="sample">
+                  <input type="file" id="file-upload" name="file-upload" accept=".csv">
+                  <button class="submit" type="submit" name="login" onclick="myFunction ()">Get Result</button>
+              </div>
+            </form>  
+        <script>
+          function myFunction () {
+          let userinfo = { 
+            'pregnancies': document.querySelector("#Pregnancies"),
+            'glucose':document.querySelector("#Glucose"),
+            'blood_pressure':document.querySelector("#BloodPressure"),
+            'skin_thickness':document.querySelector("#SkinThickness"),
+            'insulin':document.querySelector("#Insulin"),
+            'bmi':document.querySelector("#BMI"),
+            'diabetes_pedigree_function':document.querySelector("#DiabetesPedigreeFunction"),
+            'age':document.querySelector("#Age"),
+          }
+          const request = new XMLHttpRequest()
+          request.open('POST', `/processUserInfo/${JSON.stringify(userInfo)}`)
+          request.onload = () {
+          const flaskMessage= request.responseText
+          console.log(flaskMessage)
+          }
+          request.send()
+          }
+        </script>
+    </body>
+    
+</html>

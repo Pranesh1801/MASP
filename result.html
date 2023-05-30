@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pass</title>
+    <style>
+      * {
+        margin : 0px;
+        padding : 0px;
+      }
+      .coinatiner {
+        width: 100%;
+        height: 100vh;
+        background:radial-gradient(circle, #3939aa 51%, #119eba 100%);
+        display : flex;
+        justify-content : center;
+        align-items : center;
+      }
+      .result {
+        background : #fff;
+        color : #000;
+        font-weight : 700;
+        width : 350px;
+        font-size : 24px;
+        padding : 50px 30px;
+        text-align : center;
+        border-radius : 10px;
+                  }
+    </style>
+</head>
+<body>
+  <div class="coinatiner">
+    <div class="result">
+     <p class="popUp-text">{{n}}<br>
+      Current price: {{c}} <br>
+      Expected target: {{e}}</p>
+    </div>
+  </div>
+</body>
+</html>
