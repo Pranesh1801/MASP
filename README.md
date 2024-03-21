@@ -88,3 +88,5 @@ Current price: 210.23
 Expected target: 220.5
 
 In this example, the program predicts that the stock price is likely to go up based on the Moving Averages calculated for the last 3 and 21 days. The current price of the stock is $210.23, and the expected target price is $220.5.
+
+#Designed and developed by Pranesh R and Hari P T
