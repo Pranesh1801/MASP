@@ -1,4 +1,4 @@
-# SP_Cetaceans
+# MASP [Moving Average Stock Prediction]
 A stock prediction web application using Monte Carlo Simulation using DPC++ Library for Intel one API Hackathon
 ## Problem Statement
 Problem 2: Parallelizing Monte Carlo Simulation of Financial Derivatives using SYCL
